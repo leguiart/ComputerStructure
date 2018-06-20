@@ -1,0 +1,54 @@
+Opcion 3Ch crea archivo
+ds:dx apunta al nombre del archivo
+cx atributo del archivo
+salida CF=0 no error,ax contiene el manipulador
+          1; Error, ax contiene el error
+Opcion 40h escribe archivo
+bx: manipulador
+ds:dx apunta al buffer
+cx=numero de bytes to write
+salida CF=0: no error, ax igual numero de bytes escritos
+1: Error, contiene Ax el codigo de error
+
+Interrupcion 21H
+Opcion 2CH
+CH: CL: DH: DL
+HORAS: MINUTOS: SEGUNDOS: MILISEGUNDOS
+Puede servir para obtener numeros aleatorios.
+
+Procedimientos: seccion de codigo que se puede llamar de cualquier lugar del programa (es como una funcion en alto nivel), gastan mayor tiempo de procesamiento porque se hacen los calculos
+para los saltos; Se declaran al final.
+Macros: Es una directiva,como el procedimiento, no se realizan los saltos, gasta mas memoria porque se gasta en guardar las instrucciones guardadas en esta. se define en la parte 
+de arriba del codigo.
+
+Para divisiones:
+Dividendo debe estar presente desde antes en AL
+Divisor se manda a BL
+DIV BL
+El cociente se ira a AL y el residuo se ira a AH
+
+
+Secuencia para manipulacion de un archivo.
+
+Abrir archivo
+Crear
+Leer/escribir
+Cerrar archivo
+
+Tercera evaluacion.
+Presentacion.
+    Trabajo escrito
+    Triptico
+    Evaluacion
+        Sopa de letras.
+        Crucigrama
+        Relacion de columnas
+        Reactivos
+        .
+        .
+        .
+        etc.
+int 33h --> para manejo de mouse
+
+        
+
